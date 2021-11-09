@@ -5,7 +5,7 @@ class Config:
   General configuration class
   '''
   SECRET_KEY = 'Thisissupposedtobesecret!'
-  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:malcomiz0582@localhost/quotes'
+  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:malcomiz0582@localhost/kimani'
   
 
  
@@ -28,7 +28,7 @@ class ProdConfig(Config):
   Args: 
       Config: The parent configuration class with General configuration settings
   '''
-  SQLALCHEMY_DATABASE_URI = 'postgresql://ajfrkcvrvgwhpp:d7b2dfa61f57de50398389e166e9cac28d53e8ced7a0173c1c4baf942cdf0797@ec2-52-45-238-24.compute-1.amazonaws.com:5432/dfpb29pernlhum'
+  # SQLALCHEMY_DATABASE_URI = 'postgresql://ajfrkcvrvgwhpp:d7b2dfa61f57de50398389e166e9cac28d53e8ced7a0173c1c4baf942cdf0797@ec2-52-45-238-24.compute-1.amazonaws.com:5432/dfpb29pernlhum'
 
 class TestConfig(Config): 
  pass
@@ -40,7 +40,7 @@ class DevConfig(Config):
   Args: 
       Config: The parent configuration class with General configuration settings
   '''
-  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:malcomiz0582@localhost/pitcher'
+  SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:malcomiz0582@localhost/kimani'
   DEBUG = True
   
 config_options = {
